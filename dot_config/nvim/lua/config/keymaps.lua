@@ -13,7 +13,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		bufmap("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>")
 
 		-- Go to definition
-		bufmap("n", "gd", "<cmd>lua require('fzf-lua').lsp_definitions()<cr>")
+		bufmap("n", "<f12>", "<cmd>lua require('fzf-lua').lsp_definitions()<cr>")
 
 		-- Go to declaration
 		bufmap("n", "gD", "<cmd>lua require('fzf-lua').lsp_declarations()<cr>")

@@ -42,6 +42,16 @@ return {
 					},
 				},
 			})
+
+			lspconfig.gopls.setup({})
+			lspconfig.omnisharp.setup({
+				cmd = {
+					"/home/reivaj79mx/.local/share/nvim/mason/bin/omnisharp",
+					"--languageserver",
+					"--hostPID",
+					tostring(vim.fn.getpid()),
+				},
+			})
 		end,
 	},
 }
