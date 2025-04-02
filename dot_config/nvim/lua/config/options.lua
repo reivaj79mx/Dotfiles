@@ -27,3 +27,5 @@ vim.opt.cmdheight = 0
 
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "‿" }
+
+vim.api.nvim_set_option("clipboard", "unnamedplus")

@@ -55,3 +55,6 @@ vim.keymap.set({ "n", "v" }, "<leader>f", function()
 		timeout_ms = 500,
 	})
 end, { desc = "Format document" })
+
+-- NeoTree
+vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle NvimTree" })
